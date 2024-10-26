@@ -6,12 +6,12 @@ Lengua de Marcas y Sistemas de Gestión de Información de 1º DAM. IES El Rinc�
 
 ![My Skills](https://skillicons.dev/icons?i=js,html,css)
 
+
 ### Practice:
 Creating a website that looks like one of the examples found in the following link:
 
 * **https://dribbble.com/tags/web**
 
-(Find a way to make it resemble the chosen example, but it does not have to be exact by any means.)
 
 ### Chosen website:
 
