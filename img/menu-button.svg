@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="25"
+   height="19.284"
+   viewBox="0 0 6.614583 5.102225"
+   version="1.1"
+   id="svg2238"
+   sodipodi:docname="menu-button.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2240"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="8.173948"
+     inkscape:cx="34.194003"
+     inkscape:cy="23.550431"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2235" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2129"
+       transform="matrix(0.03111286,0,0,0.03111286,-0.72389073,-1.6175892)">
+      <rect
+         style="fill:#ffffff;stroke:none;stroke-width:3.77953;paint-order:stroke fill markers;stop-color:#000000"
+         id="rect2030"
+         width="212.59962"
+         height="25.234213"
+         x="23.26152"
+         y="51.984985" />
+      <rect
+         style="fill:#ffffff;stroke:none;stroke-width:3.77953;paint-order:stroke fill markers;stop-color:#000000"
+         id="rect2030-3"
+         width="212.59962"
+         height="25.234213"
+         x="23.26152"
+         y="122.23667" />
+      <rect
+         style="fill:#ffffff;stroke:none;stroke-width:3.77953;paint-order:stroke fill markers;stop-color:#000000"
+         id="rect2030-6"
+         width="212.59962"
+         height="25.234213"
+         x="23.26152"
+         y="190.74211" />
+    </g>
+  </g>
+</svg>

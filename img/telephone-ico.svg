@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="25"
+   height="25"
+   viewBox="0 0 0.75 0.75"
+   fill="none"
+   version="1.1"
+   id="svg1091"
+   sodipodi:docname="telephone-ico.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1095" />
+  <sodipodi:namedview
+     id="namedview1093"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="12.499999"
+     inkscape:cx="27.480001"
+     inkscape:cy="22.680001"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g9894" />
+  <g
+     id="g9894"
+     transform="matrix(0.5,0,0,0.5,-0.2213645,-0.2213645)">
+    <path
+       d="m 1.2856809,1.350097 0.053137,-0.053141 c 0.00818,-0.00827 0.017915,-0.01485 0.028646,-0.019333 0.010735,-0.00448 0.02225,-0.00679 0.03388,-0.00679 0.011634,0 0.023149,0.00231 0.033884,0.00679 0.010731,0.00448 0.020468,0.011059 0.028642,0.019333 l 0.062327,0.06233 c 0.00827,0.00817 0.014846,0.017903 0.019329,0.028638 0.00448,0.010731 0.00679,0.022254 0.00679,0.033884 0,0.011634 -0.00231,0.023153 -0.00679,0.033888 -0.00448,0.010731 -0.011055,0.02046 -0.019329,0.028634 L 1.4978299,1.513096 C 1.4782849,1.532833 1.4530069,1.545897 1.4255989,1.550416 1.3981909,1.554936 1.3700569,1.5506885 1.3452099,1.53827 1.1313949,1.4282048 0.95723964,1.2541862 0.84699971,1.040462 0.83457161,1.015588 0.83035171,0.9874137 0.83494631,0.9599905 c 0.004595,-0.0274236 0.017767,-0.0526866 0.037624,-0.0721513 l 0.0283649,-0.0287649 c 0.0166176,-0.0165173 0.0390963,-0.02579 0.0625262,-0.02579 0.0234299,0 0.0459086,0.009273 0.0625262,0.02579 l 0.062726,0.0627284 c 0.016517,0.016618 0.025789,0.0390939 0.025789,0.0625242 0,0.0234299 -0.00927,0.0459058 -0.025789,0.0625238 l -0.053138,0.05314 c 0.035135,0.047525 0.073728,0.092388 0.1154638,0.1342344 0.041495,0.041567 0.086106,0.079906 0.1334425,0.1146728 z"
+       stroke="#000000"
+       stroke-width="0.0599294"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       id="path1089"
+       style="stroke:#ffffff" />
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="25"
+   height="25"
+   viewBox="0 0 0.75 0.75"
+   fill="none"
+   version="1.1"
+   id="svg1091"
+   sodipodi:docname="headphones-ico.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1095" />
+  <sodipodi:namedview
+     id="namedview1093"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="11.313709"
+     inkscape:cx="30.847533"
+     inkscape:cy="30.273008"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3600" />
+  <g
+     id="g9948"
+     transform="scale(0.50000002)">
+    <g
+       id="g3600"
+       transform="matrix(0.06489421,0,0,0.06489421,-0.02873052,-0.02873052)" />
+    <path
+       class="cls-1"
+       d="m 0.45885904,0.71610699 h 0.0647357 v 0.2589426 H 0.45885904 A 0.06473565,0.06473565 0 0 1 0.3941234,0.91166966 V 0.78389301 a 0.06473565,0.06473565 0 0 1 0.0647356,-0.067786 z"
+       id="path3645"
+       style="fill:none;stroke:#333333;stroke-width:0.0647357px;stroke-miterlimit:10" />
+    <path
+       class="cls-1"
+       d="M 0.97640531,0.71610699 H 1.041141 a 0.06473565,0.06473565 0 0 1 0.064736,0.067786 v 0.1294713 A 0.06473565,0.06473565 0 0 1 1.041141,0.97809999 H 0.9764053 Z"
+       id="path3647"
+       style="fill:none;stroke:#333333;stroke-width:0.0647357px;stroke-miterlimit:10" />
+    <path
+       class="cls-1"
+       d="m 1.0089426,0.97640531 v 0 A 0.1294713,0.1294713 0 0 1 0.8794713,1.1058766 H 0.75"
+       id="path3649"
+       style="fill:none;stroke:#333333;stroke-width:0.0647357px;stroke-miterlimit:10" />
+    <path
+       class="cls-1"
+       d="M 0.4910574,0.71780164 V 0.65306599 A 0.2589426,0.2589426 0 0 1 0.75,0.3941234 v 0 a 0.2589426,0.2589426 0 0 1 0.2589426,0.25894259 v 0.0647357"
+       id="path3651"
+       style="fill:none;stroke:#333333;stroke-width:0.0647357px;stroke-miterlimit:10" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.33662;paint-order:stroke fill markers;stop-color:#000000"
+       id="rect8526"
+       width="9.3287897"
+       height="13.27536"
+       x="5.5753808"
+       y="-2.3254001"
+       inkscape:export-filename="test.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
