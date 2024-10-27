@@ -23,4 +23,4 @@ Creating a website that looks like one of the examples found in the following li
 
 
 ## Autor
-**Richard O.** - *Desarrollo y documentación* - [riordi80](https://github.com/riordi80)
+**Richard O.** - *Desarrollo* - [riordi80](https://github.com/riordi80)
