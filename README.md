@@ -2,7 +2,7 @@
 
 ## Description
 U.T.2 - Prototype 1 - Project with CSS, HTML and JavaScript.
-Lengua de Marcas y Sistemas de Gestión de Información de 1º DAM. IES El Rincón.
+Lenguajes de Marcas y Sistemas de Gestión de Información de 1º DAM. IES El Rincón.
 
 ![My Skills](https://skillicons.dev/icons?i=js,html,css)
 

@@ -145,6 +145,7 @@ body {
   align-items: center;
   border-top: 1px solid #424242;
   border-bottom: 1px solid #424242;
+  padding: 8px 0 8px 0;
 }
 
 .nav-menu-item {
@@ -152,7 +153,6 @@ body {
   width: 8%;
   color: white;
   text-align: center;
-  padding: 8px 0 8px 0;
   font-size: 14px;
 }
 
@@ -185,8 +185,23 @@ body {
   border-bottom: 3px solid #fe5b33;
 }
 
+.top-left-main-item {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 .top-left-main-item h1 {
   font-size: 50px;
+}
+
+.search {
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  color: #24262D;
+  min-height: 10px;
+  margin-top: 30px;
+  padding: 15px;
 }
 
 .top-main-item {
