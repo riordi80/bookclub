@@ -3,7 +3,16 @@ body {
   background-color: #24262D;
 }
 
-/*************** HEADER ITEMS ***************/
+li {
+  list-style: inside;
+}
+
+.li-none-bullet {
+  list-style-type: none;
+  padding: 1em 1em 1em 0;
+}
+
+/*************** HEADER ***************/
 
 .header {
   position: sticky;
@@ -28,8 +37,7 @@ body {
   min-height: 80px;
 
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -37,7 +45,7 @@ body {
 #home-link {
   color: #fe5b33;
   text-decoration: underline;
-  text-underline-offset: 8px;
+  text-underline-offset: 0.5em;
 }
 
 .left-header-item {
@@ -52,8 +60,7 @@ body {
 .header-items-container {
   width: 30%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
 }
 
@@ -74,8 +81,7 @@ body {
 .right-header-items-container {
   width: 30%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   justify-content: right;
   align-items: center;
 }
@@ -139,15 +145,12 @@ body {
 .nav-menu-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   border-top: 0px solid #424242;
   border-bottom: 0px solid #424242;
 }
-
-
 
 .nav-menu-item {
   display: none;
@@ -165,11 +168,25 @@ body {
   text-decoration: none;
 }
 
+.name-menu-active a {
+  color: #fe5b33;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+}
+
+.name-menu-active a:hover {
+  text-decoration: underline;
+}
+
 
 /*************** MAIN ***************/
 
 .main {
-  width: 100%;
+/*   background: #C33764;
+  background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("/img/home-library.jpg");
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("/img/home-library.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;   */
   background-color: #24262D;
   color: white;
   padding-bottom: 80px;
@@ -177,9 +194,12 @@ body {
 }
 
 .top-main-container {
+  padding: 2em;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+
 }
 
 .top-main-container span {
@@ -189,6 +209,7 @@ body {
 .top-left-main-item {
   display: flex;
   flex-flow: column wrap;
+  padding-bottom: 2em;
 }
 
 .top-left-main-item h1 {
@@ -202,6 +223,7 @@ body {
   min-height: 10px;
   margin-top: 30px;
   padding: 15px;
+  cursor: text;
 }
 
 .top-main-item {
@@ -220,6 +242,11 @@ body {
   padding-bottom: 25px;
 }
 
+.main-info {
+  color: #d8d8d8;
+  padding: 2em 2em 2em 2em;
+
+}
 
 /*************** MAIN-BOTTOM ***************/
 
@@ -231,8 +258,7 @@ body {
 .main-bottom-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 45px 0 70px 0;
@@ -284,8 +310,7 @@ body {
 .gallery-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
@@ -311,6 +336,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-evenly;
   color: white;
+  background-color: #24262D;
 }
 
 .footer-item {
@@ -329,7 +355,11 @@ body {
 
 .credits {
   color: white;
+
   text-align: center;
+}
+.credits p {
+  color:#d8d8d8 ;
 }
 
 .credits a {
@@ -354,6 +384,12 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
+  .top-left-main-item {
+    width: 90%;
+  }
+
+  
+
   .search {
     margin-bottom: 30px;
   }
@@ -370,13 +406,25 @@ body {
     width: 30%;
   }
 
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+  .header-item-right,
+  .header-item-left {
+    display: block !important;
+    padding: 0.8em;
+  }
+
   .top-right-main-item p {
-    text-align: left;
+    text-align: center;
+    padding: 0;
+  }
+
+  .top-left-main-item {
+    width: 65%;
   }
 
   .footer-item {
@@ -391,11 +439,6 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-  .header-item-right,
-  .header-item-left {
-    display: block !important;
-    padding: 15px;
-  }
 
   .right-header-item {
     display: block !important;
@@ -426,6 +469,16 @@ body {
   .right-main-bottom-item {
     width: 20%;
   }
+
+  .top-left-main-item {
+    width: 40%;
+  }
+
+  .top-right-main-item p {
+    text-align: left;
+    padding: 0;
+  }
+
 
   .gallery-top {
     width: 20%;
