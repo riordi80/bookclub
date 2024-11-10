@@ -182,11 +182,6 @@ li {
 /*************** MAIN ***************/
 
 .main {
-/*   background: #C33764;
-  background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("/img/home-library.jpg");
-  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("/img/home-library.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;   */
   background-color: #24262D;
   color: white;
   padding-bottom: 80px;
