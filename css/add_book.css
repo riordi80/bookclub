@@ -28,8 +28,11 @@
     margin-top: 1.3em;
 }
 
-#error-title-required, #error-autor-required, #error-category-required, #error-condition-required {
-    color: #ffab96 ;
+#error-title-required,
+#error-autor-required,
+#error-category-required,
+#error-condition-required {
+    color: #ffab96;
     display: none;
     border-bottom: none;
 }
@@ -40,7 +43,7 @@
     width: 100%;
 }
 
-.data-form-response p{
+.data-form-response p {
     padding-top: 1em;
 }
 

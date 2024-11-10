@@ -353,8 +353,9 @@ li {
 
   text-align: center;
 }
+
 .credits p {
-  color:#d8d8d8 ;
+  color: #d8d8d8;
 }
 
 .credits a {
@@ -383,7 +384,7 @@ li {
     width: 90%;
   }
 
-  
+
 
   .search {
     margin-bottom: 30px;
