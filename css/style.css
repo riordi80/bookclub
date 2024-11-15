@@ -228,8 +228,7 @@ li {
 }
 
 .top-right-main-item {
-  display: flex;
-  flex-flow: column wrap;
+
   text-align: left;
 }
 
