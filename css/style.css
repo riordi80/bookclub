@@ -9,7 +9,7 @@ li {
 
 .li-none-bullet {
   list-style-type: none;
-  padding: 1em 1em 1em 0;
+  padding: 1em 0;
 }
 
 /*************** HEADER ***************/
@@ -491,4 +491,4 @@ li {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1200px) {}

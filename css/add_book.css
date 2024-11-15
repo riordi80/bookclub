@@ -3,7 +3,7 @@
     background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("/img/library.jpg");
     background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("/img/library.jpg");
     min-height: 500px;
-    /* Parallax*/
+    /* Parallax Effect*/
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -13,6 +13,24 @@
 .main-info {
     border-radius: 15px;
     background-color: rgb(36, 38, 45, 0.7);
+}
+
+.top-main-container {
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.top-left-main-item {
+    width: 90%;
+}
+
+.top-right-main-item {
+    width: 90%;
+    text-align: left;
+    padding-top: 1em;
 }
 
 /* Add Book Form */
@@ -69,3 +87,40 @@
     color: #ffffff;
     padding: 10px;
 }
+
+/* ///////////////////////////////////// */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .top-left-main-item {
+        width: 45%;
+    }
+
+    .top-right-main-item {
+        width: 65%;
+        text-align: left;
+        padding-top: 3em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .top-left-main-item {
+        width: 35%;
+    }
+
+    .top-right-main-item {
+        width: 40%;
+        text-align: left;
+        padding-top: 3em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

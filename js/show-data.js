@@ -1,6 +1,6 @@
 //Function to show the data stored in LocalStorage
 function showData() {
-  const TITLE = localStorage.getItem("title"); //Meto dentro de la constante NAME el valor de "name"
+  const TITLE = localStorage.getItem("title");
   document.getElementById("title").innerHTML = TITLE;
 
   const AUTOR = localStorage.getItem("autor");
