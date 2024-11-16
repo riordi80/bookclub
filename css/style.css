@@ -287,6 +287,26 @@ li {
   background-color: #573f0e;
   color: white !important;
 }
+/*************** COMMENTS ***************/
+.comments-container{
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f1f1f1;
+}
+.comments-item-left {
+  width: 30%;
+}
+.comments-item-right {
+  width: 40%;
+}
+
+.add-comment-button {
+  padding-top: 1em;
+}
 
 
 /*************** GALLERY ***************/
