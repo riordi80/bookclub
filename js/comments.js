@@ -22,13 +22,14 @@ function showComments() {
     }
     tableBody.innerHTML = tableFull;
 }
-function newComment(event){
+
+function newComment(event) {
     event.preventDefault();
 
-let nameAdded = document.getElementById("name").value;
-let commentAdded = document.getElementById("comment").value;
+    let nameAdded = document.getElementById("name").value;
+    let commentAdded = document.getElementById("comment").value;
 
 
-    let newComment = {name: nameAdded, comment: commentAdded}
+    let newComment = { name: nameAdded, comment: commentAdded }
     table.push(newComment);
 }

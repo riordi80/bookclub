@@ -49,7 +49,7 @@ function validateFormSignup(event) {
     if (!valid) {
         event.preventDefault();
     } else {
-        saveData(TITLE, AUTOR, CATEGORY, CONDITION); //Si es valido, entonces guardas los datos
+        saveData(TITLE, AUTOR, CATEGORY, CONDITION);
     }
 
 }

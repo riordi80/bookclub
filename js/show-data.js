@@ -1,4 +1,4 @@
-//Function to show the data stored in LocalStorage
+//Function to show the data stored in localStorage
 function showData() {
   const TITLE = localStorage.getItem("title");
   document.getElementById("title").innerHTML = TITLE;
@@ -13,5 +13,5 @@ function showData() {
   document.getElementById("condition").innerHTML = CONDITION;
 }
 
-//Call the function that shows the data stored in LocalStorage
+//Call the function that shows the data stored in localStorage
 showData();

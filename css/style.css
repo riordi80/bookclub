@@ -287,8 +287,9 @@ li {
   background-color: #573f0e;
   color: white !important;
 }
+
 /*************** COMMENTS ***************/
-.comments-container{
+.comments-container {
   width: 100%;
   min-height: 400px;
   display: flex;
@@ -297,9 +298,11 @@ li {
   justify-content: space-evenly;
   background-color: #f1f1f1;
 }
+
 .comments-item-left {
   width: 30%;
 }
+
 .comments-item-right {
   width: 40%;
 }
