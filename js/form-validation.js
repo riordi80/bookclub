@@ -2,11 +2,11 @@ window.onload = listenForValidation;
 
 function listenForValidation() {
     let formAddBook = document.getElementById("form-add-book"); //html id
-    formAddBook.addEventListener("submit", validateFormSignup);
+    formAddBook.addEventListener("submit", validateFormAddBook);
 }
 
 //Function which validates the data sent by the form when the user clicks on submit button
-function validateFormSignup(event) {
+function validateFormAddBook(event) {
     let formAddBook = event.target;
     let valid = true;
 

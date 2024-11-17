@@ -47,11 +47,12 @@
         <div class="top-main-container">
             <div class="top-left-main-item">
                 <div>
-                    <h1>Reconocido <span>Club de Lectura </span>en los países de habla española</h1>
+                    <h1>Tu espacio para explorar historias, conectar con lectores y vivir <span>la magia de los
+                            libros</span>.</h1>
                 </div>
                 <ul class="main-info">
-                    <li>Registra un libro en nuestra base de datos y recibirás puntos de
-                        recompensa que podrás canjear para adquirir otros libros disponibles en nuestra web.</li>
+                    <li class="li-none-bullet">Comparte tus libros registrándolos en nuestra base de datos, enriquece
+                        nuestra comunidad lectora y descubre nuevas obras que te están esperando.</li>
                 </ul>
                 <a class="btn btn-light" href="add_book.html" role="button">Añadir libro</a>
             </div>
@@ -66,10 +67,12 @@
         <div class="main-bottom-container">
             <div class="left-main-bottom-item">
                 <h2>¿Qué es Book Club?</h2>
-                <p>Fundamos esta plataforma para reunir a amantes de los libros y coleccionistas de países de habla
-                    española. Aquí puedes subir tu colección y así ofrecer a otros inspiración en un área absolutamente
-                    específica. Puedes ofrecer tus obras o encontrar obras nuevas a través de nuestro
-                    showroom.</p>
+                <p>Descubre un espacio creado especialmente para los amantes de la lectura. Aquí podrás explorar nuevos
+                    mundos literarios, compartir tus opiniones y conectar con una comunidad apasionada por los libros.
+                    Nuestro sistema único te recompensa por registrar tus lecturas, ayudándote a ampliar tu colección y
+                    a descubrir obras fascinantes. Ya seas un ávido lector o estés comenzando tu aventura literaria,
+                    este es el lugar perfecto para inspirarte y encontrar tu próxima gran historia. ¡Únete al Club y haz
+                    de cada página una nueva experiencia!</p>
             </div>
             <div class="right-main-bottom-item">
                 <a class="main-bottom-button" href="#">Conviértete en miembro</a>
@@ -77,24 +80,24 @@
         </div>
     </div>
 
-
-
-
-
-
     <div class="comments-container">
         <div class="comments-item-left">
             <form id="new-comment">
                 <div class="comment-form">
+                    <h3>Comentarios</h3>
+                    <p>Añade tu comentario y sigue las últimas publicaciones de la semana. Añade tu comentario y sigue
+                        las últimas publicaciones de la semana. Añade tu comentario y sigue las últimas publicaciones de
+                        la semana. </p>
                     <label for="name">Nombre</label>
                     <input type="text" id="name" class="form-control">
                 </div>
                 <div class="comment-form">
                     <label for="comment">Comentario</label>
-                    <input type="text" id="comment" class="form-control">
+                    <textarea style="resize: none;" rows="4" required maxlength="250" id="comment"
+                        class="form-control"></textarea>
                 </div>
                 <div class="add-comment-button">
-                    <input class="btn btn-secondary" type="submit" value="Añadir Comentario">
+                    <input class="btn btn-secondary" type="submit" value="Añadir comentario">
                 </div>
 
             </form>
@@ -102,7 +105,7 @@
 
         <div class="comments-item-right">
             <div id="comments">
-                <table class="table">
+                <table class="table table-striped align-middle">
                     <thead>
                         <tr>
                             <th>Usuario</th>
@@ -116,19 +119,7 @@
             </div>
             <button id="show-comments" class="btn btn-secondary">Mostrar todos los comentarios</button>
         </div>
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="gallery">
         <div class="gallery-top">
@@ -176,73 +167,86 @@
 
     <div class="footer-container">
         <div class="footer-item">
-            <p>Sobre Nosotros</p>
-            <table id="table-left">
-                <tr>
-                    <td>Categorías</td>
-                </tr>
-                <tr>
-                    <td>Insignias</td>
-                </tr>
-                <tr>
-                    <td>Obras populares</td>
-                </tr>
-                <tr>
-                    <td>Bibliotecas</td>
-                </tr>
-                <tr>
-                    <td>FAQ</td>
-                </tr>
-                <tr>
-                    <td>Contacto</td>
-                </tr>
+            <table id="table-left" class="table">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Sobre Nosotros</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Insignias</td>
+                    </tr>
+                    <tr>
+                        <td>Obras populares</td>
+                    </tr>
+                    <tr>
+                        <td>Bibliotecas</td>
+                    </tr>
+                    <tr>
+                        <td>FAQ</td>
+                    </tr>
+                    <tr>
+                        <td>Contacto</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div class="footer-item">
-            <p>Información Legal</p>
-            <table id="table-center">
-                <tr>
-                    <td>Condiciones de uso</td>
-                </tr>
-                <tr>
-                    <td>Condiciones de contratación</td>
-                </tr>
-                <tr>
-                    <td>Condiciones para vender</td>
-                </tr>
-                <tr>
-                    <td>Política de protección de datos</td>
-                </tr>
-                <tr>
-                    <td>Política de devoluciones</td>
-                </tr>
+            <table id="table-center" class="table">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Información Legal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Condiciones de uso</td>
+                    </tr>
+                    <tr>
+                        <td>Condiciones de contratación</td>
+                    </tr>
+                    <tr>
+                        <td>Condiciones para vender</td>
+                    </tr>
+                    <tr>
+                        <td>Política de protección de datos</td>
+                    </tr>
+                    <tr>
+                        <td>Política de devoluciones</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div class="footer-item">
-            <p>Ayuda</p>
-            <table id="table-right">
-                <tr>
-                    <td>Pago seguro con tarjeta</td>
-                </tr>
-                <tr>
-                    <td>Pagar con crypto</td>
-                </tr>
-                <tr>
-                    <td>Devoluciones</td>
-                </tr>
-                <tr>
-                    <td>Gastos y formas de envío</td>
-                </tr>
-                <tr>
-                    <td>Preguntas frecuentes</td>
-                </tr>
-                <tr>
-                    <td>Estado de tu pedido</td>
-                </tr>
+            <table id="table-right" class="table">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Ayuda</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pago seguro con tarjeta</td>
+                    </tr>
+                    <tr>
+                        <td>Devoluciones</td>
+                    </tr>
+                    <tr>
+                        <td>Gastos y formas de envío</td>
+                    </tr>
+                    <tr>
+                        <td>Preguntas frecuentes</td>
+                    </tr>
+                    <tr>
+                        <td>Estado de tu pedido</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
     </div>
+
     <div class="credits">
         <p>Richard O. 2024 | <a href="https://github.com/riordi80/bookclub" target="_blank">GitHub</a></p>
     </div>

@@ -291,20 +291,28 @@ li {
 /*************** COMMENTS ***************/
 .comments-container {
   width: 100%;
-  min-height: 400px;
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-items: start;
   justify-content: space-evenly;
-  background-color: #f1f1f1;
+  min-height: 500px;
+  background: #C33764;
+  background: -webkit-linear-gradient(rgba(80, 80, 87, 0.8), rgba(195, 55, 100, 0.8)), url("/img/bookshelves.jpg");
+  background: linear-gradient(rgba(80, 80, 87, 0.8), rgba(195, 55, 100, 0.8)), url("/img/bookshelves.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 40px 0;
 }
 
 .comments-item-left {
-  width: 30%;
+  width: 80%;
+  padding-bottom: 2em;
 }
 
 .comments-item-right {
-  width: 40%;
+  width: 80%;
 }
 
 .add-comment-button {
@@ -358,8 +366,9 @@ li {
 }
 
 .footer-item {
-  width: 60%;
-  background-color: #24262D;
+  width: 90%;
+  padding-bottom: 2em;
+  text-align: center;
 }
 
 .footer-item table {
@@ -373,7 +382,6 @@ li {
 
 .credits {
   color: white;
-
   text-align: center;
 }
 
@@ -407,8 +415,6 @@ li {
     width: 90%;
   }
 
-
-
   .search {
     margin-bottom: 30px;
   }
@@ -424,8 +430,6 @@ li {
   .footer-item {
     width: 30%;
   }
-
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -446,12 +450,21 @@ li {
     width: 65%;
   }
 
-  .footer-item {
-    width: 25%;
+  .comments-item-left {
+    width: 35%;
   }
+
+  .comments-item-right {
+    width: 45%;
+  }
+
 
   .gallery-item {
     width: 30%;
+  }
+
+  .footer-item {
+    width: 25%;
   }
 }
 
@@ -498,6 +511,13 @@ li {
     padding: 0;
   }
 
+  .comments-item-left {
+    width: 30%;
+  }
+
+  .comments-item-right {
+    width: 40%;
+  }
 
   .gallery-top {
     width: 20%;
