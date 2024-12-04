@@ -12,6 +12,59 @@ li {
   padding: 1em 0;
 }
 
+/*************** PARALLAX ***************/
+
+.parallax {
+  height: 100vh;
+  background: -webkit-linear-gradient(rgba(80, 80, 87, 0.8), rgba(195, 55, 100, 0.8)), url("/img/bookshelves.jpg");
+  background: linear-gradient(rgba(80, 80, 87, 0.8), rgba(195, 55, 100, 0.8)), url("/img/bookshelves.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 40vh;
+  z-index: 2;
+}
+
+.logo-parallax {
+  max-width: 80%;
+}
+
+/************* REVEAL ELEMENTS ***********/
+
+.top-left-main-item,
+.top-right-main-item,
+.gallery-item,
+.comments-item-left,
+.comments-item-right,
+.logo-parallax,
+.main-bottom-button {
+  opacity: 0;
+  transform: translateY(90px);
+  transition: opacity 0.8s ease-out, transform 1.2s ease-out;
+}
+
+.comments-item-right.reveal {
+  transform: none;
+  transition: opacity 3s ease-out;
+}
+
+.top-right-main-item, .gallery-item {
+  transition-delay: 0.2s;
+}
+
+.comments-item-right {
+  transition-delay: 0.1s;
+}
+
 /*************** HEADER ***************/
 
 .header {
@@ -20,6 +73,7 @@ li {
   background-color: #24262D;
   padding: 10px 16px;
   color: #f1f1f1;
+  z-index: 10
 }
 
 .header a {
@@ -289,6 +343,7 @@ li {
 }
 
 /*************** COMMENTS ***************/
+
 .comments-container {
   width: 100%;
   display: flex;
@@ -306,17 +361,50 @@ li {
   padding: 40px 0;
 }
 
-.comments-item-left {
-  width: 80%;
-  padding-bottom: 2em;
-}
-
+.comments-item-left,
 .comments-item-right {
   width: 80%;
+  padding-bottom: 50px;
 }
 
 .add-comment-button {
   padding-top: 1em;
+}
+
+/**********INPUT BOX****************/
+
+.inputBox {
+  position: relative;
+}
+
+.inputBox input {
+  padding: 15px 20px;
+  outline: none;
+  background: transparent;
+  border-radius: 5px;
+  color: #e8e8e8;
+  border: 1px solid#e8e8e8;
+  font-size: 1em;
+}
+
+.inputBox textarea {
+  padding: 15px 20px;
+  outline: none;
+  background: transparent;
+  border-radius: 5px;
+  color: #e8e8e8;
+  border: 1px solid#e8e8e8;
+  font-size: 1em;
+}
+
+.inputBox select {
+  padding: 15px 20px;
+  outline: none;
+  background: transparent;
+  border-radius: 5px;
+  color: #e8e8e8;
+  border: 1px solid#e8e8e8;
+  font-size: 1em;
 }
 
 
@@ -349,6 +437,7 @@ li {
   height: 90%;
   padding: 15px;
 }
+
 
 
 /*************** FOOTER ****************/
@@ -396,6 +485,11 @@ li {
 
 .credits a:hover {
   color: #fe5b33;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /*************** MEDIA QUERIES ***************/
@@ -493,6 +587,54 @@ li {
 
   .nav-menu-item {
     display: block !important;
+  }
+
+  .gallery-item:nth-child(1) {
+    transition-delay: 0s;
+  }
+
+  .gallery-item:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+
+  .gallery-item:nth-child(3) {
+    transition-delay: 0.4s;
+  }
+
+  .gallery-item:nth-child(4) {
+    transition-delay: 0.6s;
+  }
+
+  .gallery-item:nth-child(5) {
+    transition-delay: 0s;
+  }
+
+  .gallery-item:nth-child(6) {
+    transition-delay: 0.2s;
+  }
+
+  .gallery-item:nth-child(7) {
+    transition-delay: 0.4s;
+  }
+
+  .gallery-item:nth-child(8) {
+    transition-delay: 0.6s;
+  }
+
+  .gallery-item:nth-child(9) {
+    transition-delay: 0s;
+  }
+
+  .gallery-item:nth-child(10) {
+    transition-delay: 0.2s;
+  }
+
+  .gallery-item:nth-child(11) {
+    transition-delay: 0.4s;
+  }
+
+  .gallery-item:nth-child(12) {
+    transition-delay: 0.6s;
   }
 
   .left-main-bottom-item {
