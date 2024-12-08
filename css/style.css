@@ -43,6 +43,8 @@ li {
 .top-left-main-item,
 .top-right-main-item,
 .gallery-item,
+.top-left-main-item-manager,
+.top-right-main-item-manager,
 .comments-item-left,
 .comments-item-right,
 .logo-parallax,
@@ -58,6 +60,7 @@ li {
 }
 
 .top-right-main-item,
+.top-left-main-item-manager,
 .gallery-item {
   transition-delay: 0.2s;
 }
@@ -377,32 +380,12 @@ li {
   position: relative;
 }
 
-.inputBox input {
-  padding: 15px 20px;
-  outline: none;
-  background: transparent;
-  border-radius: 5px;
-  color: #e8e8e8;
-  border: 1px solid#e8e8e8;
-  font-size: 1em;
-}
-
-.inputBox textarea {
-  padding: 15px 20px;
-  outline: none;
-  background: transparent;
-  border-radius: 5px;
-  color: #e8e8e8;
-  border: 1px solid#e8e8e8;
-  font-size: 1em;
-}
-
+.inputBox input,
+.inputBox textarea,
 .inputBox select {
   padding: 15px 20px;
   outline: none;
-  background: transparent;
   border-radius: 5px;
-  color: #e8e8e8;
   border: 1px solid#e8e8e8;
   font-size: 1em;
 }

@@ -15,7 +15,7 @@ window.onload = () => {
 function displayLastBook() {
   const BOOKS = JSON.parse(localStorage.getItem("books")) || [];
   if (BOOKS.length === 0) {
-    document.querySelector(".data-form-container").innerHTML = "<p>No hay libros añadidos aún.</p>";
+    document.querySelector(".data-form-container").innerHTML = "<p>No has añadido libros aún.</p>";
     return;
   }
 
@@ -31,10 +31,10 @@ function displayBooks() {
   const BOOKS = JSON.parse(localStorage.getItem("books")) || [];
   const BOOK_LIST_CONTAINER = document.getElementById("book-list");
 
-  BOOK_LIST_CONTAINER.innerHTML = ""; // Clear list
+  BOOK_LIST_CONTAINER.innerHTML = ""; // Clear list. To prevent duplication.
 
   if (BOOKS.length === 0) {
-    BOOK_LIST_CONTAINER.innerHTML = "<p>No hay libros en la lista.</p>";
+    BOOK_LIST_CONTAINER.innerHTML = "<p>No has añadido libros aún.</p>";
     return;
   }
 

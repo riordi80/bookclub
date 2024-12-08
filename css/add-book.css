@@ -3,7 +3,7 @@
   background: -webkit-linear-gradient(rgba(80, 80, 87, 0.8), rgba(195, 55, 100, 0.8)), url("/img/library.jpg");
   background: linear-gradient(rgba(80, 80, 87, 0.8), rgba(195, 55, 100, 0.8)), url("/img/library.jpg");
   min-height: 500px;
-  /* Parallax Effect*/
+
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -13,6 +13,7 @@
 .main-info {
   border-radius: 15px;
   background-color: rgb(36, 38, 45, 0.7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 .top-main-container {
@@ -32,6 +33,24 @@
   text-align: left;
   padding-top: 1em;
 }
+
+.top-main-container-manager {
+  padding: 2em;
+  padding-top: 5em;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.top-right-main-item-manager {
+  width: 90%;
+}
+
+.top-left-main-item-manager {
+  width: 90%;
+}
+
 
 /* Add Book Form */
 #form-add-book {
@@ -56,7 +75,7 @@
 }
 
 .book-item {
-  background-color: rgb(41, 41, 41, 0.7);
+  background-color: rgba(36, 38, 45, 0.7);
   color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
@@ -84,14 +103,15 @@
 }
 
 .data-item {
-  background-color: rgba(187, 196, 192, 0.5);
-  border-radius: 15px;
+  background-color: rgba(202, 191, 149, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   color: #ffffff;
   padding: 0.5em !important;
 }
 
 .data-value {
-  background-color: rgba(255, 255, 255, 0.1);
+
   border-radius: 15px;
   color: #ffffff;
   padding: 0.5em !important;
@@ -116,6 +136,7 @@
     text-align: left;
     padding-top: 3em;
   }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -128,6 +149,14 @@
     width: 40%;
     text-align: left;
     padding-top: 3em;
+  }
+
+  .top-right-main-item-manager {
+    width: 25%;
+  }
+
+  .top-left-main-item-manager {
+    width: 50%;
   }
 
 }

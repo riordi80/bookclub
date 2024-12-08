@@ -7,6 +7,6 @@ window.addEventListener('scroll', function () {
   PARALLAX.style.backgroundPositionY = `${SCROLLPOSITION * 0.5}px`;
 });
 
-// Mostrar el header al hacer scroll
+// Show header on scroll
 let lastScrollPosition = 0;
 const HEADER = document.querySelector('.header');

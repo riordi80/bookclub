@@ -35,7 +35,7 @@
     <div class="nav-menu-container">
       <div class="nav-menu-item"><a href="index.html">Book Club</a></div>
       <div class="nav-menu-item"><a href="add-book.html">Añadir libro</a></div>
-      <div class="nav-menu-item"><a href="#">Categorías</a></div>
+      <div class="nav-menu-item"><span class="name-menu-active"><a href="#">Gestionar libros</a></span></div>
       <div class="nav-menu-item"><a href="#">Insignias</a></div>
       <div class="nav-menu-item"><a href="#">Populares</a></div>
       <div class="nav-menu-item"><a href="#">Bibliotecas</a></div>
@@ -44,13 +44,32 @@
     </div>
   </div>
   <div class="main">
-    <div class="top-main-container">
-      <div class="top-right-main-item">
-        <h1>Listado de Libros Registrados</h1>
+    <div class="top-main-container-manager">
+      <div class="top-right-main-item-manager">
+        <ul class="main-info booklist">
+          <li class="li-none-bullet">
+            <h1>Gestionar libros</h1>
+          </li>
+          <li class="li-none-bullet">Bienvenido a tu biblioteca personalizada de BookClub. Aquí puedes gestionar
+            fácilmente los libros que has añadido a nuestra plataforma. Queremos que tengas el control total sobre tus
+            registros.</li>
+          <li><b>¿Necesitas hacer un cambio? </b>Usa el botón Editar para actualizar la información de un libro, como su
+            título, autor, categoría o estado.</li>
+          <li><b>¿Ya no deseas mantener un registro?</b> Haz clic en Eliminar para borrarlo de tu lista.
+          </li>
+          <li class="li-none-bullet">Cada cambio que realices se actualizará automáticamente, ayudándonos a mantener un
+            catálogo más completo y
+            organizado.</li>
+          <li class="li-none-bullet">Si necesitas ayuda con la edición o eliminación de tus libros, no dudes en
+            contactar con nuestro equipo de soporte. Estamos aquí para asegurarnos de que tengas la mejor experiencia
+            posible.</li>
+        </ul>
+      </div>
+      <div class="top-left-main-item-manager">
         <div id="book-list" class="book-list"></div>
+
       </div>
     </div>
-  </div>
   </div>
 
   <div class="main-bottom">
