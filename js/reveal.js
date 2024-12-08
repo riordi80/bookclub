@@ -1,4 +1,3 @@
-// Listen to the scroll event
 window.addEventListener('scroll', revealOnScroll);
 
 // Select all elements with the reveal effect
@@ -22,5 +21,4 @@ function revealOnScroll() {
     });
 }
 
-// Apply the effect also when the page loads
 revealOnScroll();

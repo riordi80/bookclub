@@ -57,7 +57,8 @@ li {
   transition: opacity 3s ease-out;
 }
 
-.top-right-main-item, .gallery-item {
+.top-right-main-item,
+.gallery-item {
   transition-delay: 0.2s;
 }
 
@@ -287,7 +288,6 @@ li {
 }
 
 .top-right-main-item p {
-  text-align: center;
   padding-bottom: 25px;
 }
 
@@ -536,7 +536,6 @@ li {
   }
 
   .top-right-main-item p {
-    text-align: center;
     padding: 0;
   }
 
@@ -650,7 +649,6 @@ li {
   }
 
   .top-right-main-item p {
-    text-align: left;
     padding: 0;
   }
 

@@ -55,6 +55,14 @@
   border-bottom: none;
 }
 
+.book-item {
+  background-color: rgb(41, 41, 41, 0.7);
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
 
 /* Form Response */
 .data-form-response {
@@ -67,6 +75,7 @@
 
 .data-form-container {
   background-color: rgb(41, 41, 41, 0.7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   width: 100%;
   padding: 25px 15px 15px 15px;
@@ -75,17 +84,17 @@
 }
 
 .data-item {
-  background-color: rgb(254, 91, 51, 0.5);
+  background-color: rgba(187, 196, 192, 0.5);
   border-radius: 15px;
   color: #ffffff;
-  padding: 10px;
+  padding: 0.5em !important;
 }
 
 .data-value {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   color: #ffffff;
-  padding: 10px;
+  padding: 0.5em !important;
 }
 
 /* ///////////////////////////////////// */
@@ -120,6 +129,7 @@
     text-align: left;
     padding-top: 3em;
   }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

@@ -1,65 +1,66 @@
-window.onload = listenForValidation;
+window.onload = () => {
+  const FORM_ADD_BOOK = document.getElementById("form-add-book");
 
-function listenForValidation() {
-  let formAddBook = document.getElementById("form-add-book"); //html id
-  formAddBook.addEventListener("submit", validateFormAddBook);
+  if (FORM_ADD_BOOK) {
+    // Form page
+    FORM_ADD_BOOK.addEventListener("submit", handleFormSubmit);
+  }
+};
+
+// Handle form submit
+function handleFormSubmit(event) {
+  event.preventDefault();
+
+  const TITLE = document.getElementById("title").value.trim();
+  const AUTOR = document.getElementById("autor").value.trim();
+  const CATEGORY = document.getElementById("category").value.trim();
+  const CONDITION = document.getElementById("condition").value.trim();
+
+  if (validateInputs(TITLE, AUTOR, CATEGORY, CONDITION)) {
+    const BOOK = { title: TITLE, autor: AUTOR, category: CATEGORY, condition: CONDITION };
+    saveBook(BOOK);
+    window.location.href = "form-response.html";
+  }
 }
 
-//Function which validates the data sent by the form when the user clicks on submit button
-function validateFormAddBook(event) {
-  let formAddBook = event.target;
+// Inputs validation
+function validateInputs(title, autor, category, condition) {
   let valid = true;
 
-  const TITLE = formAddBook["title"].value; //html name
-  if (!TITLE || TITLE == "") {
-    event.preventDefault();
+  if (!title) {
     document.getElementById("error-title-required").style.display = "block";
-    console.log("* error: título del libro obligatorio");
+    valid = false;
   } else {
     document.getElementById("error-title-required").style.display = "none";
   }
 
-  const AUTOR = formAddBook["autor"].value;
-  if (!AUTOR || AUTOR == "") {
-    event.preventDefault();
+  if (!autor) {
     document.getElementById("error-autor-required").style.display = "block";
-    console.log("* error: autor del libro obligatorio");
+    valid = false;
   } else {
     document.getElementById("error-autor-required").style.display = "none";
   }
 
-  const CATEGORY = formAddBook["category"].value;
-  if (!CATEGORY || CATEGORY == "") {
-    event.preventDefault();
+  if (!category) {
     document.getElementById("error-category-required").style.display = "block";
-    console.log("* error: categoría del libro obligatoria");
+    valid = false;
   } else {
     document.getElementById("error-category-required").style.display = "none";
   }
 
-  const CONDITION = formAddBook["condition"].value;
-  if (!CONDITION || CONDITION == "") {
-    event.preventDefault();
+  if (!condition) {
     document.getElementById("error-condition-required").style.display = "block";
-    console.log("* error: estado del libro obligatorio");
+    valid = false;
   } else {
     document.getElementById("error-condition-required").style.display = "none";
   }
 
-  if (!valid) {
-    event.preventDefault();
-  } else {
-    saveData(TITLE, AUTOR, CATEGORY, CONDITION);
-  }
-
+  return valid;
 }
 
-//Function to save the form data in LocalStorage
-function saveData(title, autor, category, condition) {
-  localStorage.setItem("title", title);
-  localStorage.setItem("autor", autor);
-  localStorage.setItem("category", category);
-  localStorage.setItem("condition", condition);
+// Save book on LocalStorage
+function saveBook(book) {
+  const BOOKS = JSON.parse(localStorage.getItem("books")) || [];
+  BOOKS.push(book);
+  localStorage.setItem("books", JSON.stringify(BOOKS));
 }
-
-listenForValidation();

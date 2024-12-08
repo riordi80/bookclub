@@ -36,4 +36,3 @@ function newComment(event) {
   table.push(newComment);
 
 }
-
