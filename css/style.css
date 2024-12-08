@@ -60,7 +60,7 @@ li {
 }
 
 .top-right-main-item,
-.top-left-main-item-manager,
+.top-right-main-item-manager,
 .gallery-item {
   transition-delay: 0.2s;
 }
@@ -286,7 +286,6 @@ li {
 }
 
 .top-right-main-item {
-
   text-align: left;
 }
 
@@ -378,12 +377,18 @@ li {
 
 .inputBox {
   position: relative;
+  background-color: rgba(244, 177, 161, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  margin-top: 2em;
+  padding: 2em;
+  border: #24262D;
+  border-radius: 2%;
+
 }
 
 .inputBox input,
 .inputBox textarea,
 .inputBox select {
-  padding: 15px 20px;
   outline: none;
   border-radius: 5px;
   border: 1px solid#e8e8e8;
@@ -395,61 +400,66 @@ li {
 
 .gallery {
   background-color: #fff;
-  padding-top: 50px;
 }
 
-.gallery-top {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
+.book-title-bg {
+  background-color: rgb(191, 68, 20);
 }
 
-.gallery-container {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+.card {
+  border: none;
 }
 
-.gallery-item {
-  width: 80%;
+.card-body {
+  padding: 1rem;
 }
 
-.gallery-item img {
-  width: 90%;
-  height: 90%;
-  padding: 15px;
+.card-title {
+  font-weight: bold;
+  color: #fff;
+}
+
+.card-body.bg-light {
+  background-color: #f8f9fa;
+  border-top: 2px solid #e0e0e0;
+  border-radius: 0 0 10px 10px;
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.small-text {
+  font-size: 0.85rem;
+}
+
+.list-group {
+  border-radius: 0 0 10px 10px;
+  /* Borde redondeado inferior */
+  overflow: hidden;
+  /* Asegura que los bordes sean visibles */
 }
 
 
 
 /*************** FOOTER ****************/
 
-.footer-container {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  color: white;
-  background-color: #24262D;
+.list-group-item.custom-bg {
+  background-color: #5b5b5b;
+  color: #ffffff;
 }
 
-.footer-item {
-  width: 90%;
-  padding-bottom: 2em;
-  text-align: center;
+.list-group-item.custom-bg a {
+  color: #ffffff;
 }
 
-.footer-item table {
-  color: #696969;
+.list-group-item.custom-bg a:hover {
+  color: #dddddd;
 }
 
-.footer-item p {
-  font-weight: bold;
-  text-transform: uppercase;
+.list-group-item.custom-header {
+  background-color: rgb(64, 64, 64);
+  color: #ffffff;
 }
 
 .credits {
@@ -469,6 +479,7 @@ li {
 .credits a:hover {
   color: #fe5b33;
 }
+
 
 .reveal {
   opacity: 1;
