@@ -435,9 +435,7 @@ li {
 
 .list-group {
   border-radius: 0 0 10px 10px;
-  /* Borde redondeado inferior */
   overflow: hidden;
-  /* Asegura que los bordes sean visibles */
 }
 
 
