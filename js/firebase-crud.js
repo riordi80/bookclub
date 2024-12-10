@@ -23,8 +23,8 @@ function showMessages(snapshot) {
         ` + messageList;
   }
 
-  let MESSAGE_LIST_ELEMENT = document.getElementById("message-list");
-  MESSAGE_LIST_ELEMENT.innerHTML = messageList;
+  let messageListElement = document.getElementById("message-list");
+  messageListElement.innerHTML = messageList;
 }
 
 function sendMessage(event) {
