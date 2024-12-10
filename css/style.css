@@ -396,36 +396,136 @@ li {
 
 /***************** CHAT *****************/
 
-.chat-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.chat-container>div {
-  margin: 2em;
-  width: 90vw;
-}
-
-#message-list>div {
-  margin-bottom: 1em;
-  border: 1px solid blue;
-  background-color: lightblue;
+/* From Uiverse.io by ahmed150up */ 
+.card-chat {
+  width: 260px;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Hace que el chat esté fijo en pantalla */
+  bottom: 20px;    /* Se separa 20px del borde inferior */
+  right: 20px;     /* Se separa 20px del borde derecho */
+  z-index: 1000;   /* Asegura que el chat se muestre encima de otros elementos */
 }
 
-#form-send-message {
+.chat-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+}
+
+.chat-window {
+  height: 220px;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.message-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.message-list>div {
+  margin-bottom: 1em;
+  border: 1px solid #b0b0b0;
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.chat-input {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #f9f9f9;
 }
 
-#form-send-message>* {
-  margin: 1em;
+.message-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
+
+.send-button {
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.send-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Botón flotante */
+.chat-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-toggle-button:hover {
+  background-color: #555;
+}
+
+/* Botón para cerrar el chat */
+.close-chat-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 5px 10px;
+  float: right;
+  cursor: pointer;
+}
+
+.close-chat-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Estado oculto del chat */
+.chat-hidden {
+  display: none;
+}
+
+/* Estado visible del chat */
+.chat-visible {
+  display: block;
+}
+
 
 /*************** COMMENTS ***************/
 
