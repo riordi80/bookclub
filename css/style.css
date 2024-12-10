@@ -396,17 +396,16 @@ li {
 
 /***************** CHAT *****************/
 
-/* From Uiverse.io by ahmed150up */ 
 .card-chat {
   width: 260px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed; /* Hace que el chat esté fijo en pantalla */
-  bottom: 20px;    /* Se separa 20px del borde inferior */
-  right: 20px;     /* Se separa 20px del borde derecho */
-  z-index: 1000;   /* Asegura que el chat se muestre encima de otros elementos */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .chat-header {
@@ -476,7 +475,6 @@ li {
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* Botón flotante */
 .chat-toggle-button {
   position: fixed;
   bottom: 20px;
@@ -500,7 +498,6 @@ li {
   background-color: #555;
 }
 
-/* Botón para cerrar el chat */
 .close-chat-button {
   background-color: #f44336;
   color: white;
@@ -516,12 +513,10 @@ li {
   background-color: #d32f2f;
 }
 
-/* Estado oculto del chat */
 .chat-hidden {
   display: none;
 }
 
-/* Estado visible del chat */
 .chat-visible {
   display: block;
 }
