@@ -394,6 +394,39 @@ li {
   color: white !important;
 }
 
+/***************** CHAT *****************/
+
+.chat-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.chat-container>div {
+  margin: 2em;
+  width: 90vw;
+}
+
+#message-list>div {
+  margin-bottom: 1em;
+  border: 1px solid blue;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+#form-send-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#form-send-message>* {
+  margin: 1em;
+}
+
 /*************** COMMENTS ***************/
 
 .comments-container {
@@ -611,6 +644,10 @@ li {
 
   .gallery-top {
     width: 35%;
+  }
+
+  .chat-container>div {
+    width: 40vw;
   }
 
   .footer-item {
