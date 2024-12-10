@@ -31,7 +31,7 @@ function displayBooks() {
   const BOOKS = JSON.parse(localStorage.getItem("books")) || [];
   const BOOK_LIST_CONTAINER = document.getElementById("book-list");
 
-  BOOK_LIST_CONTAINER.innerHTML = ""; // Clear list. To prevent duplication.
+  BOOK_LIST_CONTAINER.innerHTML = ""; // Clear list. Prevent duplication.
 
   if (BOOKS.length === 0) {
     BOOK_LIST_CONTAINER.innerHTML = "<p>No has añadido libros aún.</p>";

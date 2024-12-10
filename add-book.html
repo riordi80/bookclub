@@ -19,21 +19,42 @@
   <div class="header">
     <div class="header-container">
       <div class="left-header-item">
-        <a href="index.html"><img src="img/book-club-logo.svg" alt="Book Club"></a>
+        <a href="#"><img src="img/book-club-logo.svg" alt="Book Club"></a>
       </div>
       <div class="header-items-container">
-        <div class="header-item-right"><a href="index.html">Book Club</a></div>
+        <div class="header-item-right"><a id="home-link" href="#">Book Club</a></div>
         <div class="header-item-left"><a href="#">Showroom</a></div>
       </div>
       <div class="right-header-items-container">
-        <div class="right-header-item"><a href="#"><img id="telephone" src="img/telephone-ico.svg" alt="Llámanos"></a>
+        <div class="right-header-item">
+          <a href="#"><img id="telephone" src="img/telephone-ico.svg" alt="Llámanos"></a>
         </div>
-        <div class="right-header-item"><a href="#"><img id="headphone" src="img/headphones-ico.svg"
-              alt="Asistencia"></a></div>
-        <div class="right-header-item"><a class="login" href="#">Acceder</a></div>
-        <div class="right-header-item-mobile"><a href="#"><img src="img/menu-button.svg" alt="Menú Principal"></a></div>
+        <div class="right-header-item">
+          <a href="#"><img id="headphone" src="img/headphones-ico.svg" alt="Asistencia"></a>
+        </div>
+        <div class="right-header-item">
+          <a class="login" href="#">Acceder</a>
+        </div>
+        <!-- mobile menu button -->
+        <div class="right-header-item-mobile">
+          <a href="#" id="menu-toggle">
+            <img src="img/menu-button.svg" alt="Menú Principal">
+          </a>
+        </div>
       </div>
     </div>
+    <!-- mobile dropdwon menu -->
+    <div id="dropdown-menu" class="dropdown-menu-hidden">
+      <ul>
+        <li class="li-none-bullet"><a href="index.html">Book Club</a></li>
+        <li class="li-none-bullet"><a href="add-book.html">Añadir libro</a></li>
+        <li class="li-none-bullet"><a href="book-list.html">Gestionar libros</a></li>
+        <li class="li-none-bullet"><a href="#">Bibliotecas</a></li>
+        <li class="li-none-bullet"i><a href="#">FAQ</a></li>
+        <li class="li-none-bullet"><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <!-- menu -->
     <div class="nav-menu-container">
       <div class="nav-menu-item"><a href="index.html">Book Club</a></div>
       <div class="nav-menu-item"><span class="name-menu-active"><a href="#">Añadir libro</a></span></div>
@@ -200,6 +221,7 @@
   <!-- BookClub own scripts -->
   <script src="js/form-validation.js"></script>
   <script src="js/reveal.js"></script>
+  <script src="js/dropdown-menu.js"></script>
 
 </body>
 

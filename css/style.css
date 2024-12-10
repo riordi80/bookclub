@@ -197,6 +197,62 @@ li {
   background: #6b2b1b;
 }
 
+/*////// DROPDOWN MENU
+/* Oculta el menú desplegable por defecto */
+
+/*************** MENÚ DESPLEGABLE ***************/
+
+/* Estilo inicial oculto */
+.dropdown-menu-hidden {
+  display: none;
+  position: absolute;
+  top: 80px; /* Debajo de la cabecera */
+  right: 10px; /* Alineado al borde derecho */
+  background-color: #24262D; /* Color de fondo del menú */
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  width: 200px; /* Ancho del menú */
+}
+
+/* Menú visible */
+.dropdown-menu-visible {
+  display: block;
+}
+
+/* Lista sin puntos */
+#dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo de los enlaces */
+#dropdown-menu ul li {
+  border-bottom: 1px solid #444; /* Línea separadora */
+}
+
+#dropdown-menu ul li:last-child {
+  border-bottom: none;
+}
+
+#dropdown-menu ul li a {
+  display: block; /* Ocupa todo el ancho */
+  padding: 10px 15px; /* Espaciado interno */
+  color: #fff;
+  text-decoration: none; /* Sin subrayado */
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover */
+#dropdown-menu ul li a:hover {
+  background-color: #444; /* Fondo oscuro al pasar el ratón */
+  color: #fe5b33; /* Color de texto */
+}
+
+/********************************
+
 
 /*************** NAVIGATION MENU ***************/
 
@@ -243,7 +299,7 @@ li {
   background-color: #24262D;
   color: white;
   padding-bottom: 80px;
-  padding-top: 25px;
+  /* padding-top: 25px; */
 }
 
 .top-main-container {
@@ -363,10 +419,12 @@ li {
   padding: 40px 0;
 }
 
-.comments-item-left,
+.comments-item-left {
+  width: 80%;
+}
 .comments-item-right {
   width: 80%;
-  padding-bottom: 50px;
+  padding-top: 2em;
 }
 
 .add-comment-button {
