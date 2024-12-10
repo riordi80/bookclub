@@ -1,9 +1,9 @@
 import firebase from "./firebase-setup.js";
 
 function listenToNewMessages() {
-  const db = firebase.getDatabase();
-  const messagesRef = firebase.ref(db, 'messages/');
-  firebase.onValue(messagesRef, showMessages);
+  const DB = firebase.getDatabase();
+  const MESSAGES_REF = firebase.ref(DB, 'messages/');
+  firebase.onValue(MESSAGES_REF, showMessages);
 }
 
 function listenToSentMessageButton() {
@@ -23,21 +23,21 @@ function showMessages(snapshot) {
         ` + messageList;
   }
 
-  let messageListElement = document.getElementById("message-list");
-  messageListElement.innerHTML = messageList;
+  let MESSAGE_LIST_ELEMENT = document.getElementById("message-list");
+  MESSAGE_LIST_ELEMENT.innerHTML = messageList;
 }
 
 function sendMessage(event) {
   event.preventDefault();
   let formSendMessage = event.target;
 
-  const db = firebase.getDatabase();
-  const messagesRef = firebase.ref(db, 'messages/');
-  const newMessageRef = firebase.push(messagesRef);
-  firebase.set(newMessageRef, {
+  const DB = firebase.getDatabase();
+  const MESSAGES_REF = firebase.ref(DB, 'messages/');
+  const NEW_MESSAGE_REF = firebase.push(MESSAGES_REF);
+  firebase.set(NEW_MESSAGE_REF, {
     message: formSendMessage.message.value,
     sentBy: formSendMessage["sent-by"].value
-  })
+  });
 }
 
 listenToNewMessages();
