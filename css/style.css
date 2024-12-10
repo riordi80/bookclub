@@ -197,12 +197,9 @@ li {
   background: #6b2b1b;
 }
 
-/*////// DROPDOWN MENU
-/* Oculta el menú desplegable por defecto */
+/*************** MOBILE NAVIGATION MENU ***************/
 
-/*************** MENÚ DESPLEGABLE ***************/
-
-/* Estilo inicial oculto */
+/* Start hidden */
 .dropdown-menu-hidden {
   display: none;
   position: absolute;
@@ -215,21 +212,20 @@ li {
   width: 200px; /* Ancho del menú */
 }
 
-/* Menú visible */
+/* Visible menu */
 .dropdown-menu-visible {
   display: block;
 }
 
-/* Lista sin puntos */
 #dropdown-menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* Estilo de los enlaces */
+
 #dropdown-menu ul li {
-  border-bottom: 1px solid #444; /* Línea separadora */
+  border-bottom: 1px solid #444;
 }
 
 #dropdown-menu ul li:last-child {
@@ -237,21 +233,19 @@ li {
 }
 
 #dropdown-menu ul li a {
-  display: block; /* Ocupa todo el ancho */
-  padding: 10px 15px; /* Espaciado interno */
+  display: block; /* All width */
+  padding: 10px 15px;
   color: #fff;
-  text-decoration: none; /* Sin subrayado */
+  text-decoration: none;
   font-size: 14px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover */
 #dropdown-menu ul li a:hover {
-  background-color: #444; /* Fondo oscuro al pasar el ratón */
-  color: #fe5b33; /* Color de texto */
+  background-color: #444;
+  color: #fe5b33;
 }
-
-/********************************
 
 
 /*************** NAVIGATION MENU ***************/
