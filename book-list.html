@@ -91,7 +91,7 @@
         <div id="book-list" class="book-list"></div>
       </div>
 
-      <!-- Modal for Editing Book -->
+      <!-- Edit Book Modal -->
       <div class="modal" id="edit-modal">
         <div class="modal-content">
           <span class="close" id="close-modal">&times;</span>
@@ -122,6 +122,18 @@
         </div>
       </div>
 
+      <!-- Delete Book Modal -->
+      <div id="delete-modal" class="modal">
+        <div class="modal-content">
+          <h2>Confirmar eliminación</h2>
+          <p>¿Seguro que deseas eliminar este libro?</p>
+          <div style="text-align: center; margin-top: 20px;">
+            <button id="confirm-delete" class="btn btn-danger">Eliminar</button>
+            <button id="cancel-delete" class="btn btn-secondary">Cancelar</button>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -139,6 +151,27 @@
       <div class="right-main-bottom-item">
         <a class="btn btn-warning main-bottom-button reveal" href="#">Conviértete en miembro</a>
       </div>
+    </div>
+  </div>
+
+  <!-- Botón flotante para mostrar el chat -->
+  <button id="toggle-chat-button" class="chat-toggle-button">Chat</button>
+
+  <!-- Chat -->
+  <div class="card-chat chat-hidden" id="chat">
+    <div class="chat-header">
+      Chat
+      <button id="close-chat-button" class="close-chat-button">X</button>
+    </div>
+    <div class="chat-window">
+      <ul id="message-list" class="message-list"></ul>
+    </div>
+    <div class="chat-input">
+      <form id="form-send-message" style="display: flex; flex-direction: column; width: 100%;">
+        <input type="text" name="sent-by" class="message-input" placeholder="Nombre">
+        <input type="text" name="message" class="message-input" placeholder="Mensaje">
+        <button type="submit" class="send-button">Enviar</button>
+      </form>
     </div>
   </div>
 
@@ -227,6 +260,8 @@
   <script src="js/show-data.js"></script>
   <script src="js/reveal.js"></script>
   <script src="js/dropdown-menu.js"></script>
+  <script type="module" src="js/firebase-crud.js"></script>
+  <script src="js/chat-toggle.js"></script>
 
 </body>
 

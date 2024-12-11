@@ -1,4 +1,4 @@
-window.onload = () => {
+window.onload = function() {
   const FORM_ADD_BOOK = document.getElementById("form-add-book");
 
   if (FORM_ADD_BOOK) {
@@ -6,6 +6,7 @@ window.onload = () => {
     FORM_ADD_BOOK.addEventListener("submit", handleFormSubmit);
   }
 };
+
 
 // Handle form submit
 function handleFormSubmit(event) {

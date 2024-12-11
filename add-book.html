@@ -136,6 +136,27 @@
     </div>
   </div>
 
+  <!-- Botón flotante para mostrar el chat -->
+  <button id="toggle-chat-button" class="chat-toggle-button">Chat</button>
+
+  <!-- Chat -->
+  <div class="card-chat chat-hidden" id="chat">
+    <div class="chat-header">
+      Chat
+      <button id="close-chat-button" class="close-chat-button">X</button>
+    </div>
+    <div class="chat-window">
+      <ul id="message-list" class="message-list"></ul>
+    </div>
+    <div class="chat-input">
+      <form id="form-send-message" style="display: flex; flex-direction: column; width: 100%;">
+        <input type="text" name="sent-by" class="message-input" placeholder="Nombre">
+        <input type="text" name="message" class="message-input" placeholder="Mensaje">
+        <button type="submit" class="send-button">Enviar</button>
+      </form>
+    </div>
+  </div>
+
   <div class="footer-container bg-dark text-white py-4">
     <div class="container">
       <div class="row justify-content-around text-center">
@@ -221,6 +242,8 @@
   <script src="js/form-validation.js"></script>
   <script src="js/reveal.js"></script>
   <script src="js/dropdown-menu.js"></script>
+  <script type="module" src="js/firebase-crud.js"></script>
+  <script src="js/chat-toggle.js"></script>
 
 </body>
 

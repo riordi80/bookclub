@@ -63,7 +63,7 @@
 }
 
 
-/* Add Book Form */
+/***************  Add Book Form ***************/
 #form-add-book {
   margin-top: 1em;
 }
@@ -94,7 +94,7 @@
   margin-bottom: 1rem;
 }
 
-/* Form Response */
+/***************  Form Response ***************/
 .data-form-response {
   width: 100%;
 }
@@ -128,16 +128,18 @@
   padding: 0.5em !important;
 }
 
-/* Edit Modal Form*/
+/***************  Modal Form ***************/
 .modal {
-  display: none; /* Hide by default */
+  /* Hide by default */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; /* Enable scrolling for overflowing content */
+  /* Enable scrolling for overflowing content */
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -150,9 +152,11 @@
   width: 80%;
   max-width: 600px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative; /* Fixed at the center of the window */
+  /* Fixed at the center of the window */
+  position: relative;
   top: 50%;
-  transform: translateY(-50%); /* Centered vertically */
+  /* Centered vertically */
+  transform: translateY(-50%);
 }
 
 .close {
@@ -173,13 +177,15 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Uniform spacing between rows */
+  /* Uniform spacing between rows */
+  gap: 20px;
 }
 
 .modal-form label {
   font-weight: bold;
   margin-bottom: 5px;
-  display: block; /* Each label occupies a full row */
+  /* Each label occupies a full row */
+  display: block;
 }
 
 .modal-form input,
@@ -189,7 +195,8 @@
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box; /* Include padding and border in total width */
+  /* Include padding and border in total width */
+  box-sizing: border-box;
 }
 
 .modal-form button {
@@ -208,7 +215,7 @@
 }
 
 
-/* ///////////////////////////////////// */
+/*************** MEDIA QUERIES ***************/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}

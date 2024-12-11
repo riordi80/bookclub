@@ -1,4 +1,4 @@
-window.onload = () => {
+window.onload = function () {
   const DATA_CONTAINER = document.querySelector(".data-form-container");
   const BOOK_LIST_CONTAINER = document.getElementById("book-list");
 
@@ -15,7 +15,7 @@ window.onload = () => {
 function displayLastBook() {
   const BOOKS = JSON.parse(localStorage.getItem("books")) || [];
   if (BOOKS.length === 0) {
-    document.querySelector(".data-form-container").innerHTML = "<p>No has añadido libros aún.</p>";
+    document.querySelector(".data-form-container").innerHTML = "<p class=" + "text-white" + ">No has añadido libros aún.</p>";
     return;
   }
 
@@ -34,7 +34,7 @@ function displayBooks() {
   BOOK_LIST_CONTAINER.innerHTML = ""; // Clear list. Prevent duplication.
 
   if (BOOKS.length === 0) {
-    BOOK_LIST_CONTAINER.innerHTML = "<p>No has añadido libros aún.</p>";
+    BOOK_LIST_CONTAINER.innerHTML = "<p class=" + "text-white" + ">No has añadido libros aún.</p>";
     return;
   }
 
@@ -111,14 +111,37 @@ function editBook(event) {
 
 
 
-// Delete book
+// Delete book with modal confirmation
 function deleteBook(event) {
   const INDEX = event.target.dataset.index;
   const BOOKS = JSON.parse(localStorage.getItem("books"));
 
-  if (confirm("¿Seguro que deseas eliminar este libro?")) {
+  // Get modal elements
+  const DELETE_MODAL = document.getElementById("delete-modal");
+  const CONFIRM_DELETE = document.getElementById("confirm-delete");
+  const CANCEL_DELETE = document.getElementById("cancel-delete");
+
+  // Show the modal
+  DELETE_MODAL.style.display = "block";
+
+  // Confirm delete
+  CONFIRM_DELETE.onclick = function () {
     BOOKS.splice(INDEX, 1);
     localStorage.setItem("books", JSON.stringify(BOOKS));
-    displayBooks(); // Update list
-  }
+    displayBooks(); // Update the list
+    DELETE_MODAL.style.display = "none"; // Close the modal
+  };
+
+  // Cancel delete
+  CANCEL_DELETE.onclick = function () {
+    DELETE_MODAL.style.display = "none"; // Close the modal
+  };
+
+  // Close modal when clicking outside the modal content
+  window.onclick = function (event) {
+    if (event.target === DELETE_MODAL) {
+      DELETE_MODAL.style.display = "none";
+    }
+  };
 }
+
