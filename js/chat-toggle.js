@@ -1,18 +1,17 @@
-// Selección de elementos
-const chatButton = document.getElementById("toggle-chat-button");
-const chatCard = document.getElementById("chat");
-const closeChatButton = document.getElementById("close-chat-button");
+const CHAT_BUTTON = document.getElementById("toggle-chat-button");
+const CHAT_CARD = document.getElementById("chat");
+const CLOSE_CHAT_BUTTON = document.getElementById("close-chat-button");
 
-// Evento para mostrar el chat
-chatButton.addEventListener("click", () => {
-  chatCard.classList.remove("chat-hidden");
-  chatCard.classList.add("chat-visible");
-  chatButton.style.display = "none"; // Oculta el botón flotante
+// Show chat event
+CHAT_BUTTON.addEventListener("click", () => {
+  CHAT_CARD.classList.remove("chat-hidden");
+  CHAT_CARD.classList.add("chat-visible");
+  CHAT_BUTTON.style.display = "none"; // Oculta el botón flotante
 });
 
-// Evento para cerrar el chat
-closeChatButton.addEventListener("click", () => {
-  chatCard.classList.remove("chat-visible");
-  chatCard.classList.add("chat-hidden");
-  chatButton.style.display = "block"; // Muestra el botón flotante
+// Close chat event
+CLOSE_CHAT_BUTTON.addEventListener("click", () => {
+  CHAT_CARD.classList.remove("chat-visible");
+  CHAT_CARD.classList.add("chat-hidden");
+  CHAT_BUTTON.style.display = "block"; // Muestra el botón flotante
 });

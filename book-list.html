@@ -50,7 +50,7 @@
         <li class="li-none-bullet"><a href="add-book.html">Añadir libro</a></li>
         <li class="li-none-bullet"><a href="book-list.html">Gestionar libros</a></li>
         <li class="li-none-bullet"><a href="#">Bibliotecas</a></li>
-        <li class="li-none-bullet"i><a href="#">FAQ</a></li>
+        <li class="li-none-bullet"><a href="#">FAQ</a></li>
         <li class="li-none-bullet"><a href="#">Contacto</a></li>
       </ul>
     </div>
@@ -58,7 +58,8 @@
     <div class="nav-menu-container">
       <div class="nav-menu-item"><a href="index.html">Book Club</a></div>
       <div class="nav-menu-item"><a href="add-book.html">Añadir libro</a></div>
-      <div class="nav-menu-item"><span class="name-menu-active"><a href="book-list.html">Gestionar libros</a></span></div>
+      <div class="nav-menu-item"><span class="name-menu-active"><a href="book-list.html">Gestionar libros</a></span>
+      </div>
       <div class="nav-menu-item"><a href="#">Bibliotecas</a></div>
       <div class="nav-menu-item"><a href="#">FAQ</a></div>
       <div class="nav-menu-item"><a href="#">Contacto</a></div>
@@ -81,12 +82,46 @@
           </li>
           <li class="li-none-bullet">Cada cambio que realices se actualizará automáticamente, ayudándonos a mantener un
             catálogo más completo y organizado.</li>
-          <a class="btn btn-light w-100 mt-3" href="add-book.html">Añadir nuevo libro</a>
+          <li class="li-none-bullet"><a class="btn btn-light btn-lg w-100 mt-3" href="add-book.html">Añadir nuevo
+              libro</a>
+          </li>
         </ul>
       </div>
       <div class="top-right-main-item-manager">
         <div id="book-list" class="book-list"></div>
       </div>
+
+      <!-- Modal for Editing Book -->
+      <div class="modal" id="edit-modal">
+        <div class="modal-content">
+          <span class="close" id="close-modal">&times;</span>
+          <h2>Editar Libro</h2>
+          <form class="modal-form" id="edit-form">
+            <div>
+              <label for="edit-title">Título</label>
+              <input type="text" id="edit-title" name="title" placeholder="Nuevo título">
+            </div>
+            <div>
+              <label for="edit-autor">Autor</label>
+              <input type="text" id="edit-autor" name="autor" placeholder="Nuevo autor">
+            </div>
+            <div>
+              <label for="edit-category">Categoría</label>
+              <input type="text" id="edit-category" name="category" placeholder="Nueva categoría">
+            </div>
+            <div>
+              <label for="edit-condition">Estado</label>
+              <select id="edit-condition" name="condition">
+                <option value="Nuevo">Nuevo</option>
+                <option value="Usado">Usado</option>
+                <option value="Deteriorado">Deteriorado</option>
+              </select>
+            </div>
+            <button type="submit">Guardar Cambios</button>
+          </form>
+        </div>
+      </div>
+
     </div>
   </div>
 

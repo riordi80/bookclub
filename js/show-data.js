@@ -62,25 +62,54 @@ function displayBooks() {
   );
 }
 
-// Edit book
 function editBook(event) {
   const INDEX = event.target.dataset.index;
   const BOOKS = JSON.parse(localStorage.getItem("books"));
   const BOOK = BOOKS[INDEX];
 
-  const NEW_TITLE = prompt("Nuevo título:", BOOK.title);
-  const NEW_AUTOR = prompt("Nuevo autor:", BOOK.autor);
-  const NEW_CATEGORY = prompt("Nueva categoría:", BOOK.category);
-  const NEW_CONDITION = prompt("Nuevo estado:", BOOK.condition);
+  // Show the modal
+  const MODAL = document.getElementById("edit-modal");
+  MODAL.style.display = "block";
 
-  if (NEW_TITLE) BOOKS[INDEX].title = NEW_TITLE.trim();
-  if (NEW_AUTOR) BOOKS[INDEX].autor = NEW_AUTOR.trim();
-  if (NEW_CATEGORY) BOOKS[INDEX].category = NEW_CATEGORY.trim();
-  if (NEW_CONDITION) BOOKS[INDEX].condition = NEW_CONDITION.trim();
+  // Populate the form with the selected book's data
+  document.getElementById("edit-title").value = BOOK.title;
+  document.getElementById("edit-autor").value = BOOK.autor;
+  document.getElementById("edit-category").value = BOOK.category;
+  document.getElementById("edit-condition").value = BOOK.condition;
 
-  localStorage.setItem("books", JSON.stringify(BOOKS));
-  displayBooks(); // Update list
+  // Handle form submission
+  const FORM = document.getElementById("edit-form");
+  FORM.onsubmit = function (e) {
+    e.preventDefault();
+
+    // Update the book with the new values
+    BOOKS[INDEX].title = document.getElementById("edit-title").value.trim();
+    BOOKS[INDEX].autor = document.getElementById("edit-autor").value.trim();
+    BOOKS[INDEX].category = document.getElementById("edit-category").value.trim();
+    BOOKS[INDEX].condition = document.getElementById("edit-condition").value;
+
+    // Save changes to localStorage and update the list
+    localStorage.setItem("books", JSON.stringify(BOOKS));
+    displayBooks();
+
+    // Close the modal
+    MODAL.style.display = "none";
+  };
+
+  // Close the modal when clicking on the close button
+  document.getElementById("close-modal").onclick = function () {
+    MODAL.style.display = "none";
+  };
+
+  // Close the modal when clicking outside the modal content
+  window.onclick = function (event) {
+    if (event.target === MODAL) {
+      MODAL.style.display = "none";
+    }
+  };
 }
+
+
 
 // Delete book
 function deleteBook(event) {

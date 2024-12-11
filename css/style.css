@@ -203,13 +203,17 @@ li {
 .dropdown-menu-hidden {
   display: none;
   position: absolute;
-  top: 80px; /* Debajo de la cabecera */
-  right: 10px; /* Alineado al borde derecho */
-  background-color: #24262D; /* Color de fondo del menú */
+  top: 80px;
+  /* Debajo de la cabecera */
+  right: 10px;
+  /* Alineado al borde derecho */
+  background-color: #24262D;
+  /* Color de fondo del menú */
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   z-index: 100;
-  width: 200px; /* Ancho del menú */
+  width: 200px;
+  /* Ancho del menú */
 }
 
 /* Visible menu */
@@ -233,7 +237,8 @@ li {
 }
 
 #dropdown-menu ul li a {
-  display: block; /* All width */
+  display: block;
+  /* All width */
   padding: 10px 15px;
   color: #fff;
   text-decoration: none;
@@ -499,7 +504,7 @@ li {
 }
 
 .close-chat-button {
-  background-color: #f44336;
+  background-color: #9b9b9b;
   color: white;
   border: none;
   border-radius: 3px;
@@ -510,7 +515,7 @@ li {
 }
 
 .close-chat-button:hover {
-  background-color: #d32f2f;
+  background-color: #fe5b33;
 }
 
 .chat-hidden {
@@ -544,6 +549,7 @@ li {
 .comments-item-left {
   width: 80%;
 }
+
 .comments-item-right {
   width: 80%;
   padding-top: 2em;

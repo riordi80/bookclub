@@ -1,10 +1,10 @@
 // Button and dropdown menu
-const menuToggle = document.getElementById("menu-toggle");
-const dropdownMenu = document.getElementById("dropdown-menu");
+const MENU_TOGGLE = document.getElementById("menu-toggle");
+const DROPDOWN_MENU = document.getElementById("dropdown-menu");
 
-// Add an event when button menu is clicked
-menuToggle.addEventListener("click", function (e) {
+// Add an event when menu mobile button is clicked
+MENU_TOGGLE.addEventListener("click", function (e) {
   e.preventDefault();
-  dropdownMenu.classList.toggle("dropdown-menu-visible");
-  dropdownMenu.classList.toggle("dropdown-menu-hidden");
+  DROPDOWN_MENU.classList.toggle("dropdown-menu-visible");
+  DROPDOWN_MENU.classList.toggle("dropdown-menu-hidden");
 });

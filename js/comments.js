@@ -1,6 +1,6 @@
 window.onload = loadEvents;
 
-// COMMENTS TABLE
+// Comments Table
 let table = [
   { name: "María G.", comment: "Un club increíble para los amantes de la lectura. Encuentro recomendaciones únicas y siempre tengo acceso a libros que me sorprenden. Además, el sistema de recompensas por registrar libros es genial. ¡Súper recomendado!" },
   { name: "Luis P.", comment: "Esta plataforma es perfecta para compartir mis lecturas y descubrir nuevos títulos. Me encanta la comunidad activa y las recompensas que me motivan a seguir explorando. ¡Un lugar ideal para lectores apasionados!" },

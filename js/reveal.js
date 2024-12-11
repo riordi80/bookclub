@@ -5,20 +5,20 @@ const REVEALELEMENTS = document.querySelectorAll('.main-bottom-button, .top-left
 
 // Check if an element is visible in the viewport
 function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.bottom >= 0
-    );
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom >= 0
+  );
 }
 
 // Apply the reveal effect
 function revealOnScroll() {
-    REVEALELEMENTS.forEach((el) => {
-        if (isElementInViewport(el)) {
-            el.classList.add('reveal'); // Add the "reveal" class
-        }
-    });
+  REVEALELEMENTS.forEach((el) => {
+    if (isElementInViewport(el)) {
+      el.classList.add('reveal'); // Add the "reveal" class
+    }
+  });
 }
 
 revealOnScroll();
